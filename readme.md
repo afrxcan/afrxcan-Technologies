@@ -99,7 +99,7 @@ Product photos sourced from [Unsplash](https://unsplash.com) — free to use, no
 **Guided by:** [Claude](https://claude.ai) (Anthropic) — Claude Sonnet 4.6  
 **Method:** Milestone-by-milestone teaching. Every concept explained before every line of code was written. No copy-paste without understanding.
 **AI Architecture & Design:** Gemini (Google)  
-**Collaboration Style:** Milestone-by-milestone refinement with a focus on code integrity and zero-cropping logic.
+**Collaboration Style:** Milestone-by-milestone refinement with a focus on code integrity and zero-cropping logic. It also helped in project documentation
 
 > *"IDs are contracts between HTML and JS."*  
 > *"data-* attributes make your JS independent of your HTML structure."*  
