@@ -13,13 +13,14 @@ afrxcan-technologies/
 ├── style.css    → All visual styles and animations
 ├── script.js    → Search, cart, and animation logic
 └── README.md    → This file
+└── images       → Contains all the images for the webpage
 ```
 
 ---
 
 ## ✨ Features
 
-- **14 iPhone models** across 4 tiers: Flagship, Standard, Previous Gen, Budget
+- **13 iPhone models** across 4 tiers: Flagship, Standard, Previous Gen, Budget
 - **Live search** — filters cards in real time as you type
 - **Add to Cart** — cart counter updates in navbar with visual feedback
 - **Scroll entrance animations** — cards animate in as you scroll down
