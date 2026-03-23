@@ -90,7 +90,7 @@ This project was built milestone by milestone. Here's everything covered:
 
 ## 🖼️ Photography
 
-Product photos sourced from [Unsplash](https://unsplash.com) — free to use, no attribution required under the Unsplash License.
+Product photos sourced from Google Images
 
 ---
 
