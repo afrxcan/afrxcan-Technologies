@@ -1,61 +1,54 @@
+// Intersection Observer for Scroll Entrance
+const observerOptions = { threshold: 0.1 };
+const cardObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            cardObserver.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.product-card').forEach(card => cardObserver.observe(card));
+
+// Search Filter
 const searchInput = document.getElementById('searchInput');
-const cards = document.querySelectorAll('.product-card');
-const noResults = document.getElementById('noResults');
+const productCards = document.querySelectorAll('.product-card');
 
-searchInput.addEventListener('input', function () {
+searchInput.addEventListener('input', (e) => {
+    const term = e.target.value.toLowerCase();
+    let found = false;
 
-  // Step 1: get search , lowercase it to make it case-insensitive
-  const query = searchInput.value.toLowerCase();
-
-  // Step 2 & 3 & 4: loop, check, show/hide
-  cards.forEach(function (card) {
-    const name = card.querySelector('.card-name').textContent.toLowerCase();
-
-    if (name.includes(query)) {
-      card.classList.remove('hidden');
-    } else {
-      card.classList.add('hidden');
-    }
-  });
-
-  // Step 5: no results message if all cards are hidden
-  const visibleCards = document.querySelectorAll('.product-card:not(.hidden)');
-
-  if (visibleCards.length === 0) {
-    noResults.classList.remove('hidden');
-  } else {
-    noResults.classList.add('hidden');
-  }
-
+    productCards.forEach(card => {
+        const name = card.querySelector('.card-name').textContent.toLowerCase();
+        if (name.includes(term)) {
+            card.classList.remove('hidden');
+            found = true;
+        } else {
+            card.classList.add('hidden');
+        }
+    });
+    
+    document.getElementById('noResults').classList.toggle('hidden', found);
 });
 
-let cart = [];
+// Cart Counter
 let cartCount = 0;
-
-const cartButtons = document.querySelectorAll('.add-to-cart-btn');
-const cartCountDisplay = document.getElementById('cartCount');
-
-cartButtons.forEach(function (button) {
-  button.addEventListener('click', function () {
-  });
+document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        cartCount++;
+        document.getElementById('cartCount').textContent = cartCount;
+        
+        // Button Feedback
+        const originalText = btn.textContent;
+        btn.textContent = 'Added ✓';
+        btn.style.background = 'var(--gold)';
+        btn.style.color = '#000';
+        
+        setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            btn.style.color = '';
+        }, 1200);
+    });
 });
-
-const name = button.dataset.name;
-const price = button.dataset.price;
-
-// Add item to the array
-cart.push({ name: name, price: price });
-
-// Update the count
-cartCount++;
-cartCountDisplay.textContent = cartCount;
-
-button.textContent = 'Added ✓';
-button.style.borderColor = 'var(--gold-light)';
-button.style.color = 'var(--gold-light)';
-
-setTimeout(function () {
-  button.textContent = 'Add to Cart';
-  button.style.borderColor = '';
-  button.style.color = '';
-}, 1500);
