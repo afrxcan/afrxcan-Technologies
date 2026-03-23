@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>afrxcan Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <div class="nav-logo">
+                <span class="logo-icon">⬡</span>
+                <span class="logo-text">
+                    Afrx<span class="logo-accent">can</span> Technologies
+                 </span>
+                </div>
+
+            <!-- Search -->
+            <div class="search">
+                <span class="search-icon">🔍</span>
+                <input
+                type="text"
+                id="searchInput"
+                class="search-input"
+                placeholder="Search products..."
+                />
+            </div>
+
+            <!-- Cart -->
+            <div class="cart">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-badge" id="cartCount">0</span>
+            </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+
+        <!-- Eyebrow -->
+         <p class="hero-eyebrow">Official Apple Reseller · Kenya</p>
+
+        <!-- Headline -->
+         <h1 class="hero-title">The iPhone.
+            <br />
+            <span class="hero-accent">Delivered to You.</span>
+         </h1>
+
+        <!-- Subtitle -->
+         <p class="hero-subtitle">
+            Every model. Every colour. Every configuration. 
+            Genuine Apple Warranty. Shop the full iPhone lineup right here
+         </p>
+            
+        <!-- CTA Button -->
+            <a href="#products" class="hero-btn">Shop Now</a>
+        </div>
+
+           <div class="hero-visual">
+        <div class="hero-phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <span class="phone-screen-text">iPhone 17 Pro</span>
+          </div>
+        </div>
+      </div>
+ 
+    </section>
+ 
+    <!--  Products Section -->
+    <section class="products-section" id="products">
+ 
+      <div class="section-header">
+        <h2 class="section-title">Our iPhones</h2>
+        <p class="section-subtitle">Every model. Every color. Genuine stock.</p>
+      </div>
+ 
+      <div class="products-grid" id="productsGrid">
+ 
+        <!-- Flagships -->
+ 
+        <!-- Card 1 -->
+        <article class="product-card" data-category="flagship">
+          <div class="card-image">
+            <div class="phone-placeholder">
+              <span class="phone-emoji">📱</span>
+            </div>
+            <span class="card-badge">Flagship</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">iPhone 17 Pro Max</h3>
+            <p class="card-specs">6.9" · 48MP · A19 Pro · 5088mAh</p>
+            <div class="card-footer">
+              <span class="card-price">KES 249,000</span>
+              <button class="add-to-cart-btn" data-name="iPhone 17 Pro Max" data-price="249000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+ 
+        <!-- Card 2 -->
+        <article class="product-card" data-category="flagship">
+          <div class="card-image">
+            <div class="phone-placeholder">
+              <span class="phone-emoji">📱</span>
+            </div>
+            <span class="card-badge">Flagship</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">iPhone 17 Pro</h3>
+            <p class="card-specs">6.3" · 48MP · A19 Pro · 4685mAh</p>
+            <div class="card-footer">
+              <span class="card-price">KES 219,000</span>
+              <button class="add-to-cart-btn" data-name="iPhone 17 Pro" data-price="219000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+ 
+        <!-- Card 3 -->
+        <article class="product-card" data-category="flagship">
+          <div class="card-image">
+            <div class="phone-placeholder">
+              <span class="phone-emoji">📱</span>
+            </div>
+            <span class="card-badge">Flagship</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">iPhone Air</h3>
+            <p class="card-specs">6.5" · 48MP · A19 Pro · 5.6mm thin</p>
+            <div class="card-footer">
+              <span class="card-price">KES 189,000</span>
+              <button class="add-to-cart-btn" data-name="iPhone Air" data-price="189000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+ 
+        <!-- Standard -->
+ 
+        <!-- Card 4 -->
+        <article class="product-card" data-category="standard">
+          <div class="card-image">
+            <div class="phone-placeholder">
+              <span class="phone-emoji">📱</span>
+            </div>
+            <span class="card-badge badge-standard">Standard</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">iPhone 17</h3>
+            <p class="card-specs">6.3" · 48MP · A19 · 3561mAh</p>
+            <div class="card-footer">
+              <span class="card-price">KES 159,000</span>
+              <button class="add-to-cart-btn" data-name="iPhone 17" data-price="159000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+ 
+        <!-- Card 5 -->
+        <article class="product-card" data-category="standard">
+          <div class="card-image">
+            <div class="phone-placeholder">
+              <span class="phone-emoji">📱</span>
+            </div>
+            <span class="card-badge badge-standard">Standard</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">iPhone 16 Pro Max</h3>
+            <p class="card-specs">6.9" · 48MP · A18 Pro · 5000mAh</p>
+            <div class="card-footer">
+              <span class="card-price">KES 189,000</span>
+              <button class="add-to-cart-btn" data-name="iPhone 16 Pro Max" data-price="189000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+ 
+        <!-- Card 6 -->
+        <article class="product-card" data-category="standard">
+          <div class="card-image">
+            <div class="phone-placeholder">
+              <span class="phone-emoji">📱</span>
+            </div>
+            <span class="card-badge badge-standard">Standard</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">iPhone 16 Pro</h3>
+            <p class="card-specs">6.3" · 48MP · A18 Pro · 4685mAh</p>
+            <div class="card-footer">
+              <span class="card-price">KES 159,000</span>
+              <button class="add-to-cart-btn" data-name="iPhone 16 Pro" data-price="159000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+ 
+        <!-- Previous Generation -->
+ 
+        <!-- Card 7 -->
+        <article class="product-card" data-category="previous">
+          <div class="card-image">
+            <div class="phone-placeholder">
+              <span class="phone-emoji">📱</span>
+            </div>
+            <span class="card-badge badge-previous">Previous Gen</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">iPhone 16 Plus</h3>
+            <p class="card-specs">6.7" · 48MP · A18 · 4685mAh</p>
+            <div class="card-footer">
+              <span class="card-price">KES 129,000</span>
+              <button class="add-to-cart-btn" data-name="iPhone 16 Plus" data-price="129000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+ 
+        <!-- Card 8 -->
+        <article class="product-card" data-category="previous">
+          <div class="card-image">
+            <div class="phone-placeholder">
+              <span class="phone-emoji">📱</span>
+            </div>
+            <span class="card-badge badge-previous">Previous Gen</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">iPhone 16</h3>
+            <p class="card-specs">6.1" · 48MP · A18 · 3561mAh</p>
+            <div class="card-footer">
+              <span class="card-price">KES 109,000</span>
+              <button class="add-to-cart-btn" data-name="iPhone 16" data-price="109000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+ 
+        <!-- Card 9 -->
+        <article class="product-card" data-category="previous">
+          <div class="card-image">
+            <div class="phone-placeholder">
+              <span class="phone-emoji">📱</span>
+            </div>
+            <span class="card-badge badge-previous">Previous Gen</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">iPhone 15 Pro Max</h3>
+            <p class="card-specs">6.7" · 48MP · A17 Pro · 4422mAh</p>
+            <div class="card-footer">
+              <span class="card-price">KES 119,000</span>
+              <button class="add-to-cart-btn" data-name="iPhone 15 Pro Max" data-price="119000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+ 
+        <!-- Card 10 -->
+        <article class="product-card" data-category="previous">
+          <div class="card-image">
+            <div class="phone-placeholder">
+              <span class="phone-emoji">📱</span>
+            </div>
+            <span class="card-badge badge-previous">Previous Gen</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">iPhone 15 Pro</h3>
+            <p class="card-specs">6.1" · 48MP · A17 Pro · 3274mAh</p>
+            <div class="card-footer">
+              <span class="card-price">KES 99,000</span>
+              <button class="add-to-cart-btn" data-name="iPhone 15 Pro" data-price="99000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+ 
+        <!-- Budget -->
+ 
+        <!-- Card 11 -->
+        <article class="product-card" data-category="budget">
+          <div class="card-image">
+            <div class="phone-placeholder">
+              <span class="phone-emoji">📱</span>
+            </div>
+            <span class="card-badge badge-budget">Budget</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">iPhone 15</h3>
+            <p class="card-specs">6.1" · 48MP · A16 · 3349mAh</p>
+            <div class="card-footer">
+              <span class="card-price">KES 79,000</span>
+              <button class="add-to-cart-btn" data-name="iPhone 15" data-price="79000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+ 
+        <!-- Card 12 -->
+        <article class="product-card" data-category="budget">
+          <div class="card-image">
+            <div class="phone-placeholder">
+              <span class="phone-emoji">📱</span>
+            </div>
+            <span class="card-badge badge-budget">Budget</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">iPhone 14 Pro Max</h3>
+            <p class="card-specs">6.7" · 48MP · A16 · 4323mAh</p>
+            <div class="card-footer">
+              <span class="card-price">KES 69,000</span>
+              <button class="add-to-cart-btn" data-name="iPhone 14 Pro Max" data-price="69000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+ 
+        <!-- Card 13 -->
+        <article class="product-card" data-category="budget">
+          <div class="card-image">
+            <div class="phone-placeholder">
+              <span class="phone-emoji">📱</span>
+            </div>
+            <span class="card-badge badge-budget">Budget</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">iPhone 14</h3>
+            <p class="card-specs">6.1" · 12MP · A15 · 3279mAh</p>
+            <div class="card-footer">
+              <span class="card-price">KES 59,000</span>
+              <button class="add-to-cart-btn" data-name="iPhone 14" data-price="59000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+ 
+        <!-- Card 14 -->
+        <article class="product-card" data-category="budget">
+          <div class="card-image">
+            <div class="phone-placeholder">
+              <span class="phone-emoji">📱</span>
+            </div>
+            <span class="card-badge badge-budget">Budget</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">iPhone 13</h3>
+            <p class="card-specs">6.1" · 12MP · A15 · 3227mAh</p>
+            <div class="card-footer">
+              <span class="card-price">KES 49,000</span>
+              <button class="add-to-cart-btn" data-name="iPhone 13" data-price="49000">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+ 
+      </div>
+ 
+      <!-- Shows when search finds nothing -->
+      <p class="no-results hidden" id="noResults">
+        No iPhones match your search. Try something else.
+      </p>
+ 
+    </section>
+ 
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <span class="logo-icon">⬡</span>
+          <span class="logo-text">
+            Afrx<span class="logo-accent">can</span> Technologies
+          </span>
+        </div>
+        <p class="footer-copy">© 2026 Afrxcan Technologies. Built in Africa. 🌍</p>
+      </div>
+    </footer>
+ 
+    <script src="script.js"></script>
+  </body>
+</html>
+ 
