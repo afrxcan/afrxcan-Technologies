@@ -95,7 +95,7 @@ body {
   text-align: center;
   padding-top: 60px;
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), var(--black-pure)), 
-                    url('/images/BACKGROUND.jpg');
+                    url('images/BACKGROUND.jpg');
   background-size: contain;
   background-position: center;
 }
