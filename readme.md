@@ -13,7 +13,7 @@ afrxcan-technologies/
 ├── style.css    → All visual styles and animations
 ├── script.js    → Search, cart, and animation logic
 └── README.md    → This file
-└── images       → Contains all the images for the webpage
+└── images/      → Contains all the images for the webpage
 ```
 
 ---
