@@ -369,9 +369,9 @@ button {
 }
 
 .badge-flagship {
-  background: rgba(212, 175, 55, 0.15);
+  background: rgba(212, 175, 55, 0.152);
   border: 1px solid rgba(212, 175, 55, 0.6);
-  color: var(--gold-light);
+  color: var(--gold);
 }
 
 .badge-standard {
