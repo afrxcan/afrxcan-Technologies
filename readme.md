@@ -27,7 +27,7 @@ afrxcan-technologies/
 - **Hero staggered entrance** — text elements appear one after another on load
 - **Button ripple effect** — click feedback on every Add to Cart button
 - **Responsive grid** — adapts from 4 columns → 1 column with zero media queries
-- **Real product photography** via Unsplash (free, no copyright issues)
+- **Real product photography** via Google Images
 
 ---
 
