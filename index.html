@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,23 +10,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-logo">
         <span class="logo-icon">⬡</span>
-        <span class="logo-text">Afrx<span class="logo-accent">can</span> Technologies</span>
+        <span class="logo-text">Afrx<span class="logo-accent">can</span> <span class="logo-suffix">Technologies</span></span>
       </div>
 
-      <div class="search-wrapper">
-        <span class="search-icon">🔍</span>
-        <input type="text" id="searchInput" class="search-input" placeholder="Search iPhones..." />
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="search-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search iPhones..." />
+        </div>
       </div>
 
-      <div class="nav-cart" id="cartBtn">
-        <span class="cart-icon">🛒</span>
-        <span class="cart-badge" id="cartCount">0</span>
+      <div class="nav-actions">
+        <div class="nav-cart" id="cartBtn">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-badge" id="cartCount">0</span>
+        </div>
+        <button class="menu-btn" id="menuToggle" aria-label="Toggle Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
       </div>
     </div>
   </nav>
@@ -134,7 +151,7 @@
 
       <article class="product-card" data-category="previous-gen">
         <div class="card-image">
-              <img src="images/iPhone 16.webp" alt="iPhone 16" class="card-img" />
+          <img src="images/iPhone 16.webp" alt="iPhone 16" class="card-img" />
           <span class="card-badge badge-previous">Previous Gen</span>
         </div>
         <div class="card-body">
@@ -252,4 +269,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
