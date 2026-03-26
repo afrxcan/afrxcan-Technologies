@@ -8,7 +8,7 @@ Dark theme with gold accents, real product photography, smooth animations, live 
 ## 🗂️ Project Structure
 
 ```
-afrxcan-technologies/
+afrxcan-Technologies/
 ├── index.html   → Page structure and content
 ├── style.css    → All visual styles and animations
 ├── script.js    → Search, cart, and animation logic
